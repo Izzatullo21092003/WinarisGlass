@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-fhf86@70=6*&y_z$gk+4bt7!vs#w6ddwi90g^cv(zsdx*ya!bb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'glass_shop',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
