@@ -4,9 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Winaris Glass Inc</title>
+    <title>{% block title %}Winaris Glass Inc{% endblock %}</title>
+    <link href="{% static 'glass_shop/styles.css' %}" rel="stylesheet">
 </head>
 <body>
-    
+    {% block content %}
+    <!--inside the 'block content' and 'endblock' you can code the important thigs that contain in the main page of 
+    the website like infos about the company and location through the map and so on-->
+    {% endblock %}
+    <!--The written code in this file out of the 'block content' and 'endblock' could be seen in the other three html flies 
+    inside of 'glss_shop' folder so it's better to write like header and footer out of the block content and endblock-->
 </body>
 </html>
