@@ -8,9 +8,6 @@
 </head>
 <body>
     <ul class="nav">
-        <li class="nav-item">
-            <a href="{ url 'index' }" class="nav-link">Home</a>
-        </li>
         {% if user.is_authenticated %}
             <li class="nav-item">
                 <a href="{ url 'logout' }" class="nav-link">Log Out</a>

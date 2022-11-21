@@ -37,7 +37,7 @@ def logout_view(request): # logout page of the website
     return HttpResponseRedirect(reverse("index"))
 
 
-def register_view(request): # register page of the website
+def register(request): # register page of the website
     if request.method == "POST":
         username = request.POST["username"]
         email = request.POST["email"]
