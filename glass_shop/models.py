@@ -1,3 +1,4 @@
+from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.urls import reverse
 
@@ -6,8 +7,12 @@ from django.utils.translation import gettext as _
 # Create your models here.
 
 
+class User(AbstractUser):
+    pass
+
+
 class Benson(models.Model):
-    id = models.BigAutoField(primary_key=True, serialize=False)
+    id = models.AutoField(primary_key=True, serialize=False)
     part_number = models.TextField(_("Part Number"), blank=True, null=True)
     product = models.TextField(_("PRODUCT"), blank=True, null=True)
     color = models.TextField(_("COLOR"), blank=True, null=True)
