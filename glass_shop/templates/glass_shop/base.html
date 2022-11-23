@@ -10,14 +10,14 @@
     <ul class="nav">
         {% if user.is_authenticated %}
             <li class="nav-item">
-                <a href="{ url 'logout' }" class="nav-link">Log Out</a>
+                <a href="{% url 'logout' %}" class="nav-link">Log Out</a>
             </li>
         {% else %}
             <li class="nav-item">
-                <a href="{ url 'login' }" class="nav-link">Login</a>
+                <a href="{% url 'login' %}" class="nav-link">Log In</a>
             </li>
             <li class="nav-item">
-                <a href="{ url 'register' }" class="nav-link">Register</a>
+                <a href="{% url 'register' %}" class="nav-link">Register</a>
             </li>
         {% endif %}
     </ul>
